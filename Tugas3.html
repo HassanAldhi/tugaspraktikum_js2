@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Penggunaan Sampah Plastik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        #container {
+            width: 400px;
+            margin: 0 auto;
+        }
+        
+        .input-group {
+            margin-bottom: 10px;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .input-group input {
+            width: 100%;
+            padding: 5px;
+        }
+        
+        #result {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        
+        #result label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kalkulator Penggunaan Sampah Plastik</h1>
+    <div id="container">
+        <div class="input-group">
+            <label>Jumlah Botol Plastik per Hari:</label>
+            <input type="number" id="botol" min="0">
+        </div>
+        <div class="input-group">
+            <label>Jumlah Gelas Plastik per Hari:</label>
+            <input type="number" id="gelas" min="0">
+        </div>
+        <div class="input-group">
+            <label>Jumlah Sedotan Plastik per Hari:</label>
+            <input type="number" id="sedotan" min="0">
+        </div>
+        <div id="result">
+            <label>Total Penggunaan Botol Plastik per Tahun:</label>
+            <span id="totalBotol">0</span>
+            <br>
+            <label>Total Penggunaan Gelas Plastik per Tahun:</label>
+            <span id="totalGelas">0</span>
+            <br>
+            <label>Total Penggunaan Sedotan Plastik per Tahun:</label>
+            <span id="totalSedotan">0</span>
+            <br>
+            <label>Subtotal Penggunaan Sampah Plastik:</label>
+            <span id="subtotal">0</span>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
