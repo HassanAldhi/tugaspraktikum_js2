@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kalkulator Penggunaan Sampah Plastik</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        
-        h1 {
-            text-align: center;
-        }
-        
-        #container {
-            width: 400px;
-            margin: 0 auto;
-        }
-        
-        .input-group {
-            margin-bottom: 10px;
-        }
-        
-        .input-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        
-        .input-group input {
-            width: 100%;
-            padding: 5px;
-        }
-        
-        #result {
-            background-color: #f4f4f4;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        
-        #result label {
-            font-weight: bold;
-        }
-    </style>
+    <title>Calculator Items Consume</title>
 </head>
 <body>
-    <h1>Kalkulator Penggunaan Sampah Plastik</h1>
+    <h1>ITEMS YOU CONSUME DAILY</h1>
+    <h3 style="font-weight: 400;">Please enter the quantity for <b>each day</b></h3>
     <div id="container">
-        <div class="input-group">
-            <label>Jumlah Botol Plastik per Hari:</label>
-            <input type="number" id="botol" min="0">
-        </div>
-        <div class="input-group">
-            <label>Jumlah Gelas Plastik per Hari:</label>
-            <input type="number" id="gelas" min="0">
-        </div>
-        <div class="input-group">
-            <label>Jumlah Sedotan Plastik per Hari:</label>
-            <input type="number" id="sedotan" min="0">
-        </div>
+        <table>
+            <tr>
+              <th></th>
+              <th>Day</th>
+              <th>Year</th>
+            </tr>
+            <tr>
+              <td>Plastic Bottles</td>
+              <td><input type="number" id="bottles" min="0"></td>
+              <td><span id="sumBottles"></span></td>
+            </tr>
+            <tr>
+              <td>Plastic Cups</td>
+              <td><input type="number" id="cups" min="0"></td>
+              <td><span id="sumCups"></span></td>
+            </tr>
+            <tr>
+              <td>Straws</td>
+              <td><input type="number" id="straws" min="0"></td>
+              <td><span id="sumStraws"></span></td>
+            </tr>
+            <tr>
+              <td>Cotton Swabs</td>
+              <td><input type="number" id="cottons" min="0"></td>
+              <td><span id="sumCottons"></span></td>
+            </tr>
+            <tr>
+              <td>Cigarette Butts</td>
+              <td><input type="number" id="cigarettes" min="0"></td>
+              <td><span id="sumCigarettes"></span></td>
+            </tr>
+            <tr>
+              <td>Plastic Resealable Bags</td>
+              <td><input type="number" id="bags" min="0"></td>
+              <td><span id="sumBags"></span></td>
+            </tr>
+            <tr>
+              <td>Plastic Cling Wrap</td>
+              <td><input type="number" id="wrap" min="0"></td>
+              <td><span id="sumWrap"></span></td>
+            </tr>
+            </tr>
+            <tr>
+              <td>Plastic Silverware</td>
+              <td><input type="number" id="silverware" min="0"></td>
+              <td><span id="sumSilverware"></span></td>
+            </tr>
+            <tr>
+              <td>Plastic Stirrers</td>
+              <td><input type="number" id="stirrers" min="0"></td>
+              <td><span id="sumStirrers"></span></td>
+            </tr>
+            <tr>
+              <td>Food Containers</td>
+              <td><input type="number" id="containers" min="0"></td>
+              <td><span id="sumContainers"></span></td>
+            </tr>
+          </table>
+
         <div id="result">
-            <label>Total Penggunaan Botol Plastik per Tahun:</label>
-            <span id="totalBotol">0</span>
             <br>
-            <label>Total Penggunaan Gelas Plastik per Tahun:</label>
-            <span id="totalGelas">0</span>
-            <br>
-            <label>Total Penggunaan Sedotan Plastik per Tahun:</label>
-            <span id="totalSedotan">0</span>
-            <br>
-            <label>Subtotal Penggunaan Sampah Plastik:</label>
+            <label>Current Yearly Consumption</label>
             <span id="subtotal">0</span>
         </div>
     </div>
