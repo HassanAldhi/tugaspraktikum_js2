@@ -2,16 +2,18 @@
 <html>
 <head>
     <title>Calculator Items Consume</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ITEMS YOU CONSUME DAILY</h1>
-    <h3 style="font-weight: 400;">Please enter the quantity for <b>each day</b></h3>
-    <div id="container">
-        <table>
+    <div id="container" align="center">
+      <h2 style="color: tomato;">ITEMS YOU CONSUME DAILY</h2>
+      <h3 style="font-weight: 400;">Please enter the quantity for <b>each day</b></h3>
+      <br>  
+      <table>
             <tr>
               <th></th>
-              <th>Day</th>
-              <th>Year</th>
+              <th>DAY</th>
+              <th>YEAR</th>
             </tr>
             <tr>
               <td>Plastic Bottles</td>
@@ -64,13 +66,11 @@
               <td><input type="number" id="containers" min="0"></td>
               <td><span id="sumContainers"></span></td>
             </tr>
+            <tr>
+              <td colspan="2">Current Yearly Consumption</td>
+              <td><span id="subtotal" style="color:tomato; font-weight: 900;">0</span></td>
+            </tr>
           </table>
-
-        <div id="result">
-            <br>
-            <label>Current Yearly Consumption</label>
-            <span id="subtotal">0</span>
-        </div>
     </div>
 
     <script src="main.js"></script>
